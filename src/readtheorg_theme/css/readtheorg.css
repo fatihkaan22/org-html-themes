@@ -382,10 +382,15 @@ table tr:nth-child(2n) td{
     background-color:white;
 }
 
+.figure {
+	padding: .2em;
+}
+
 .figure p{
     color:#000;
     font:italic 85%/1 arial,sans-serif;
-    padding:1em 0;
+    padding:0;
+		margin:0;
 }
 
 .rotate-90{
@@ -951,7 +956,8 @@ footer p{
 }
 
 #content div.figure{
-    margin-bottom:24px}
+    margin-bottom:0
+	}
 
 #content div.figure.align-center{
     text-align:center}
