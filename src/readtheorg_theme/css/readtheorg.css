@@ -1111,6 +1111,9 @@ h2.footnotes{
     font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
     font-size: 90%;
     color: navy;
+		padding: 5px;
+		background: #d9e1f2;
+		border-radius: 20px;
 }
 
 .nav .timestamp {
