@@ -74,6 +74,14 @@ $( document ).ready(function() {
     tocTitle.append(closeBtn);
 });
 
+// Display title of the document instead of 'Table of Contents'
+$( document ).ready(function() {
+		if (document.title !== '\u200E') {
+				var toc = document.getElementById('table-of-contents').childNodes[1]; // h2
+				toc.textContent = document.title;
+		}
+});
+
 window.SphinxRtdTheme = (function (jquery) {
     var stickyNav = (function () {
         var navBar,
