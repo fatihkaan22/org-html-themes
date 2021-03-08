@@ -321,7 +321,7 @@ code{
     margin:1px 0 24px 0}
 
 pre.src{
-    /* color:#404040; */
+    color:#404040; /* dark */
     display:block;
     font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
     font-size:12px;
@@ -1129,3 +1129,81 @@ h2.footnotes{
     padding: 9px 12px;
     margin-bottom: 24px;
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif}
+
+#button-dark-toggle {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: #292d3e;
+	border: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+html.dark #content {
+	background: #292d3e !important;
+}
+
+html.dark body {
+	background: #292d3e;
+  color:#fff;
+}
+
+html.dark .note, html.dark .warning, html.dark .tip{
+  color:#404040;
+}
+
+html.dark blockquote, html.dark .verse, html.dark code {
+	background: #434758;
+}
+
+html.dark table tr:nth-child(2n-1) td, html.dark #table-of-contents{
+    background-color: #1d1e26;
+}
+
+html.dark table tr:nth-child(2n) td, html.dark th{
+    background-color: #2a2c37;
+}
+
+html.dark h5 {
+	color: #bbc5ff;
+}
+
+html.dark h4 {
+	color: #9cc4ff;
+}
+
+html.dark h3 {
+	color: #e1acff;
+}
+
+html.dark h2 {
+	color: #ddffa7;
+}
+
+html.dark span[id*='MathJax-Span']{
+    color:#ffffff}
+
+html.dark #table-of-contents li{
+}
+
+html.dark li.active {
+	background-color: #2a2c37;
+}
+
+html.dark li.active ul li a{
+	color: #fff !important;
+}
+
+html.dark #table-of-contents h2 {
+	background: #9580ff;
+}
+
+html.dark caption {
+	color: #fff;
+}
+
+html.dark a {
+	color: #a3f7ff;
+}

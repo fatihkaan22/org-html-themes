@@ -82,6 +82,32 @@ $( document ).ready(function() {
 		}
 });
 
+// dark mode
+$( document ).ready(function() {
+
+	var toc = document.getElementById("table-of-contents");
+	var mode = localStorage.getItem("darkmode");
+
+	var button = document.createElement("BUTTON");
+	button.innerHTML = "🌙";
+	button.id = "button-dark-toggle";
+	toc.appendChild(button);
+
+	if(mode === "dark") {
+			document.documentElement.classList.toggle('dark');
+	}
+
+	button.addEventListener("click", () => {
+			document.documentElement.classList.toggle('dark');
+			if (mode === "dark") {
+				localStorage.setItem("darkmode", "light");
+			} else {
+				localStorage.setItem("darkmode", "dark");
+			}
+	});
+
+});
+
 window.SphinxRtdTheme = (function (jquery) {
     var stickyNav = (function () {
         var navBar,
