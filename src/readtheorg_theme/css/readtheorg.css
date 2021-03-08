@@ -1227,7 +1227,10 @@ html.dark #table-of-contents h2 {
 	background: #9580ff;
 }
 
-
 html.dark a {
 	color: #a3f7ff;
+}
+
+html.dark img {
+  filter: brightness(.6) contrast(1.4);
 }
