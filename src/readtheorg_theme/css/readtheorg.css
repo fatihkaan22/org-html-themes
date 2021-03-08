@@ -1130,11 +1130,22 @@ h2.footnotes{
     margin-bottom: 24px;
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif}
 
+:root {
+  --bg: #292d3e;
+  --bg1: #252938;
+  --bg2: #212432;
+  --bg-1: #3e4251;
+  --bg-2: #545765;
+	--bg-3: #696c78;
+  --fg: #ffffff;
+}
+
+
 #button-dark-toggle {
 	position: absolute;
 	top: 8px;
 	right: 8px;
-	background: #292d3e;
+	background: var(--bg);
 	border: 0;
 	width: 30px;
 	height: 30px;
@@ -1142,28 +1153,28 @@ h2.footnotes{
 }
 
 html.dark #content {
-	background: #292d3e !important;
+	background: var(--bg) !important;
 }
 
 html.dark body {
-	background: #292d3e;
-  color:#fff;
+	background: var(--bg);
+	color: var(--fg);
 }
 
 html.dark .note, html.dark .warning, html.dark .tip{
-  color:#404040;
+  color: var(--bg2);
 }
 
 html.dark blockquote, html.dark .verse, html.dark code {
-	background: #434758;
+  background-color: var(--bg-1);
 }
 
-html.dark table tr:nth-child(2n-1) td, html.dark #table-of-contents{
-    background-color: #1d1e26;
+html.dark table tr:nth-child(2n-1) td{
+    background-color: var(--bg-1);
 }
 
 html.dark table tr:nth-child(2n) td, html.dark th{
-    background-color: #2a2c37;
+    background-color: var(--bg1);
 }
 
 html.dark h5 {
@@ -1182,27 +1193,40 @@ html.dark h2 {
 	color: #ddffa7;
 }
 
+html.dark caption ,
 html.dark span[id*='MathJax-Span']{
-    color:#ffffff}
+	color: var(--fg);
+}
 
-html.dark #table-of-contents li{
+html.dark #table-of-contents {
+	background-color: var(--bg-1);
 }
 
 html.dark li.active {
-	background-color: #2a2c37;
+	background-color: var(--bg-2);
 }
 
-html.dark li.active ul li a{
-	color: #fff !important;
+html.dark li.active a {
+	color: var(--fg) !important;
+}
+
+html.dark ul.nav>li.active li.active
+{
+	background-color: var(--bg-3);
+}
+
+html.dark ul.nav>li.active>a  {
+	background-color: var(--bg2);
+}
+
+html.dark #table-of-contents li.current a{
+	color: var(--fg) !important;
 }
 
 html.dark #table-of-contents h2 {
 	background: #9580ff;
 }
 
-html.dark caption {
-	color: #fff;
-}
 
 html.dark a {
 	color: #a3f7ff;
