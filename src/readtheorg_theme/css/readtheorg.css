@@ -1137,7 +1137,8 @@ h2.footnotes{
   --bg-1: #3e4251;
   --bg-2: #545765;
 	--bg-3: #696c78;
-  --fg: #ffffff;
+  --fg: #fcfcfc;
+  --fgp: #bbc5ff;
 }
 
 
@@ -1232,5 +1233,13 @@ html.dark a {
 }
 
 html.dark img {
-  filter: brightness(.6) contrast(1.4);
+  filter: brightness(.7) contrast(1.3);
+}
+
+html.dark .figure p {
+	color: var(--fgp);
+}
+
+html.dark pre {
+  box-shadow:3px 3px 3px var(--bg-1);
 }
