@@ -1162,8 +1162,11 @@ html.dark body {
 	color: var(--fg);
 }
 
-html.dark .note, html.dark .warning, html.dark .tip{
-  color: var(--bg2);
+html.dark .note, 
+html.dark .warning, 
+html.dark .tip{
+  color: var(--bg);
+  filter: brightness(.8);
 }
 
 html.dark blockquote, html.dark .verse, html.dark code {
@@ -1242,4 +1245,12 @@ html.dark .figure p {
 
 html.dark pre {
   box-shadow:3px 3px 3px var(--bg-1);
+}
+
+html.dark code {
+	color: var(--fg);
+}
+
+html.dark .src-org {
+	background: #e0e0e0;
 }
