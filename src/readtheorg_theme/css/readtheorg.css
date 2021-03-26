@@ -1218,6 +1218,13 @@ html.dark span[id*='MathJax-Span']{
 	color: var(--fg);
 }
 
+html.dark .note span[id*='MathJax-Span'],
+html.dark .tip span[id*='MathJax-Span'],
+html.dark .warning span[id*='MathJax-Span']
+{
+	color: var(--bg);
+}
+
 html.dark #table-of-contents {
 	background-color: var(--bg-1);
 }
